@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-app",
+  "version": "1.0.0",
+  "description": "Portfolio App",
+  "author": "Rafael Martins rafael_as_martins@hotmail.com",
+  "license": "MIT",
+  "main": "app.js",
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express"
+  ],
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
