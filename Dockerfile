@@ -5,10 +5,9 @@ WORKDIR /home/node/app
 
 COPY app/package*.json ./
 
-RUN npm install && npm install -g nodemon
+RUN npm install -g -y npm@latest npm install && npm install -g nodemon && npm install -g grunt-cli \
+    && npm install grunt --save-dev && npm install grunt-contrib-less --save-dev && npm install grunt-autoprefixer --save-dev \
+    && npm install grunt-contrib-watch --save-dev  
 
-USER node
-
-COPY --chown=node:node app/ .
 
 EXPOSE 3000

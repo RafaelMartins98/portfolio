@@ -5,6 +5,10 @@
   "author": "Rafael Martins rafael_as_martins@hotmail.com",
   "license": "MIT",
   "main": "app.js",
+  "scripts": {
+    "predev": "grunt",
+    "dev": "grunt watch & nodemon app"
+  },
   "keywords": [
     "nodejs",
     "bootstrap",
