@@ -21,7 +21,7 @@ module.exports = function (grunt) {
         autoprefixer: {
             single_file: {
                 src: "style/main.css",
-                dest: "style/main.css"
+                dest: "views/public/main.css"
             }
         },
         watch: {

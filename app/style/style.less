@@ -1,10 +1,139 @@
 @main-font: Arial, sans-serif;
+@background-color  : #1b0c0c;
+@content-top-margin: 8%;
+@content-text-color: white;
+@timer-ease        : all 0.3s ease;
 
-html, body {
-  height: 100%;
+html,
+body {
+  height          : 100%;
+  background-color: @background-color  !important;
 }
 
-body, h1 {
-  margin: 0;
+body{
+  overflow-y: scroll; 
+  overflow-x:hidden;
+}
+
+body,
+h1 {
+  margin     : 0;
   font-family: @main-font;
+}
+
+.section-divider > img{
+  max-width: 100%;
+}
+
+
+#section-1,
+#section-2, #section-3 {
+  height    : 949px;
+  text-align: center;
+  color: white;
+}
+
+#section-1 {
+  background-image: url("images/section-1-background.jpg");  
+  background-size: cover;
+}
+
+#section-2{
+  background-image: url("images/section-2-background.jpg");
+}
+
+#section-3{
+  background-image: url("images/section-3-background.jpg");
+  background-size: cover;
+}
+
+#profile-image {
+  border-radius: 268px;
+  height       : 300px;
+  margin-top   : @content-top-margin;
+}
+
+.content {
+  margin-top: @content-top-margin;
+  color     : @content-text-color;
+}
+
+.typewrite>.wrap {
+  border-right: 0.08em solid #fff
+}
+
+#get-to-know-button {
+  margin-top: 7%;
+  color: white;
+}
+
+#return-to-top {
+  position             : fixed;
+  bottom               : 20px;
+  right                : 20px;
+  background           : rgb(0, 0, 0);
+  background           : rgba(0, 0, 0, 0.7);
+  width                : 50px;
+  height               : 50px;
+  display              : block;
+  text-decoration      : none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius   : 35px;
+  border-radius        : 35px;
+  display              : none;
+  -webkit-transition   : all 0.3s linear;
+  -moz-transition      : @timer-ease;
+  -ms-transition       : @timer-ease;
+  -o-transition        : @timer-ease;
+  transition           : @timer-ease;
+}
+
+#return-to-top i {
+  color             : #fff;
+  margin            : 0;
+  position          : relative;
+  left              : 16px;
+  top               : 13px;
+  font-size         : 19px;
+  -webkit-transition: @timer-ease;
+  -moz-transition   : @timer-ease;
+  -ms-transition    : @timer-ease;
+  -o-transition     : @timer-ease;
+  transition        : @timer-ease;
+}
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+  color: #fff;
+  top  : 5px;
+}
+
+#section-header {
+  color     : @content-text-color;
+  position  : absolute;
+  margin-top: 3%;
+  width     : 100%
+}
+
+#description-marged{
+  margin-top: 10%;
+}
+
+#description-info{
+  padding-left: 100px;
+}
+#description-images{
+  padding-right: 100px;
+}
+
+#description-images > .row > .col > img{
+  border-radius: 167px;
+  max-width: 150px;
+}
+
+.col-content{
+  text-align: justify;
 }
