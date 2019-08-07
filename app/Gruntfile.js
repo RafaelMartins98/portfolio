@@ -14,13 +14,13 @@ module.exports = function (grunt) {
         less: {
             production: {
                 files: {
-                    "style/main.css": ["style/*less"]
+                    "views/public/main.css": ["style/*less"]
                 }
             }
         },
         autoprefixer: {
             single_file: {
-                src: "style/main.css",
+                src: "views/public/main.css",
                 dest: "views/public/main.css"
             }
         },
