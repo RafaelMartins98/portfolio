@@ -1,10 +1,14 @@
 $(document).ready(function () {
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() >= 50) {
+        if ($(this).scrollTop() >= 700) {
             $('#return-to-top').fadeIn(200);
+            $('#bill-quote').fadeIn(200);
+            $('#jonh-quote').fadeIn(200);
         } else {
             $('#return-to-top').fadeOut(200);
+            $('#bill-quote').fadeOut(200);
+            $('#jonh-quote').fadeOut(200);
         }
     });
     $('#return-to-top').click(function () {
@@ -24,7 +28,7 @@ $(document).ready(function () {
             }, 800, function () {
                 window.location.hash = hash;
             });
-        } 
+        }
     });
 
 

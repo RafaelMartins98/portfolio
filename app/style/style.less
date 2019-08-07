@@ -10,9 +10,9 @@ body {
   background-color: @background-color  !important;
 }
 
-body{
-  overflow-y: scroll; 
-  overflow-x:hidden;
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body,
@@ -21,30 +21,31 @@ h1 {
   font-family: @main-font;
 }
 
-.section-divider > img{
+.section-divider>img {
   max-width: 100%;
 }
 
 
 #section-1,
-#section-2, #section-3 {
+#section-2,
+#section-3 {
   height    : 949px;
   text-align: center;
-  color: white;
+  color     : white;
 }
 
 #section-1 {
-  background-image: url("images/section-1-background.jpg");  
-  background-size: cover;
+  background-image: url("images/section-1-background.jpg");
+  background-size : cover;
 }
 
-#section-2{
+#section-2 {
   background-image: url("images/section-2-background.jpg");
 }
 
-#section-3{
+#section-3 {
   background-image: url("images/section-3-background.jpg");
-  background-size: cover;
+  background-size : cover;
 }
 
 #profile-image {
@@ -64,7 +65,7 @@ h1 {
 
 #get-to-know-button {
   margin-top: 7%;
-  color: white;
+  color     : white;
 }
 
 #return-to-top {
@@ -111,29 +112,74 @@ h1 {
   top  : 5px;
 }
 
-#section-header {
+.section-header {
   color     : @content-text-color;
   position  : absolute;
   margin-top: 3%;
-  width     : 100%
+  width     : 100%;
+  text-align: center;
 }
 
-#description-marged{
-  margin-top: 10%;
+#bill-quote{
+  margin-top: 11%;
 }
 
-#description-info{
+#jonh-quote{
+  margin-top: 29%;
+}
+
+#description-marged {
+  position  : absolute;
+  margin-top: 15%;
+}
+
+#description-info {
   padding-left: 100px;
 }
-#description-images{
+
+#description-images {
   padding-right: 100px;
 }
 
-#description-images > .row > .col > img{
+#description-images>.row>.col>img {
   border-radius: 167px;
-  max-width: 150px;
+  max-width    : 150px;
 }
 
-.col-content{
+.col-content {
   text-align: justify;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+.card {
+  width       : 18rem;
+  height      : 400px;
+  margin-right: 2%;
+}
+
+.check-website {
+  width   : 100%;
+  position: absolute;
+  left    : 0px;
+  bottom  : -1px;
+}
+
+.normal-card-title {
+  margin-top: 15% !important;
+}
+
+#cards-row {
+  padding-left: 18%;
+  padding-top: 17%;
+}
+
+#igac-image {
+  max-height: 141px;
+}
+
+#cases-image {
+  padding-top: 17%;
 }
